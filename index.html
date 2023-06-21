@@ -11,15 +11,21 @@
     />
 
     <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section class="preview-card">
       <header class="card-heading">
         <h1>Get <span>insights</span> that help your business grow.</h1>
-        <p>
+        <p class="card-desc">
           Discover the benefits of data analytics and make better decisions
-          regarding revenue, customer experience, and overall efficiency
+          regarding revenue, customer experience, and overall efficiency.
         </p>
         <ul class="stats">
           <li>
@@ -36,12 +42,11 @@
           </li>
         </ul>
       </header>
-      <div class="preview-img">
-        <img
-          src="images/image-header-desktop.jpg"
-          alt="group of people in an office"
-        />
-      </div>
+      <div
+        class="preview-img"
+        role="img"
+        aria-label="a group of people sitting in an office"
+      ></div>
     </section>
     <div class="attribution">
       Challenge by

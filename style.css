@@ -1,3 +1,12 @@
+:root {
+  --dark-blue: hsl(233, 47%, 7%);
+  --desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --main-heading: hsl(0, 0%, 100%);
+  --paragraph-heading: hsla(0, 0%, 100%, 0.75);
+  --stat-heading: hsla(0, 0%, 100%, 0.6);
+}
+
 *,
 *::before,
 *::after {
@@ -7,13 +16,97 @@
 }
 
 body {
+  font-family: 'Inter', 'Lexend Deca', sans-serif;
+  font-size: 15px;
   min-height: 100vh;
+  background-color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+}
+
+.preview-card {
+  background-color: var(--desaturated-blue);
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 11px;
+}
+
+.card-heading {
+  padding: 60px 100px 60px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card-heading h1 {
+  color: var(--main-heading);
+  font-size: 40px;
+}
+
+.card-heading h1 span {
+  color: var(--soft-violet);
+}
+
+.card-heading .card-desc {
+  color: var(--paragraph-heading);
+  line-height: 1.8;
+  padding-bottom: 60px;
+  padding-right: 60px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 60px;
+}
+
+.card-heading .stats .stats-text {
+  color: var(--stat-heading);
+  text-transform: uppercase;
+  font-family: 'Lexend Deca', sans-serif;
+  padding-top: 4px;
+}
+
+.card-heading .stats .stats-number {
+  color: var(--main-heading);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.preview-img::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(277, 64%, 35%);
+  border-radius: inherit;
+  opacity: 0.5;
+}
+
+.preview-img {
+  width: 100%;
+  position: relative;
+  background-image: url('images/image-header-desktop.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom-right-radius: 11px;
+  border-top-right-radius: 11px;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 20px;
+  color: var(--main-heading);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--soft-violet);
 }
