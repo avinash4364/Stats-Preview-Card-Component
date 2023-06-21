@@ -42,7 +42,8 @@ Users should be able to:
 
 ### Useful resources
 
-- [resource](https://blog.logrocket.com/understanding-min-content-max-content-fit-content-css/) - This helped me to clearly understand properties min-content, max-content, and fit-content and how it is used in css grid.
+- [resource 1](https://blog.logrocket.com/understanding-min-content-max-content-fit-content-css/) - This helped me to clearly understand properties min-content, max-content, and fit-content and how it is used in css grid.
+- [resource 2](https://css-tricks.com/almanac/properties/b/background-blend-mode/) - This css-tricks article was great article to learn about background-blend-mode property.
 
 ## Author
 
