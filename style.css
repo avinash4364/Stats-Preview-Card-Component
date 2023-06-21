@@ -84,11 +84,10 @@ ul {
   width: 100%;
   height: 100%;
   position: relative;
-  background-image: linear-gradient(
-      hsla(277, 64%, 35%, 0.5),
-      hsla(277, 64%, 35%, 0.5)
-    ),
-    url('images/image-header-desktop.jpg');
+  background-image: url('images/image-header-desktop.jpg');
+  background-color: var(--soft-violet);
+  opacity: 0.85;
+  background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: right;
