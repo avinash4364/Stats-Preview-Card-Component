@@ -35,70 +35,69 @@ ul {
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
   border-radius: 11px;
+  column-gap: 30px;
 }
 
-.card-heading {
-  padding: 60px 100px 60px 60px;
+.card-header {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding: 60px;
+  padding-right: 100px;
 }
 
-.card-heading h1 {
+.card-header h1 {
   color: var(--main-heading);
   font-size: 40px;
 }
 
-.card-heading h1 span {
+.card-header h1 span {
   color: var(--soft-violet);
 }
 
-.card-heading .card-desc {
+.card-header .card-desc {
   color: var(--paragraph-heading);
   line-height: 1.8;
-  padding-bottom: 60px;
-  padding-right: 60px;
 }
 
 .stats {
   display: flex;
   justify-content: space-between;
-  padding-right: 60px;
 }
 
-.card-heading .stats .stats-text {
+.card-header .stats .stats-text {
   color: var(--stat-heading);
   text-transform: uppercase;
   font-family: 'Lexend Deca', sans-serif;
   padding-top: 4px;
 }
 
-.card-heading .stats .stats-number {
+.card-header .stats .stats-number {
   color: var(--main-heading);
   font-size: 32px;
   font-weight: 700;
 }
 
-.preview-img::before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: hsl(277, 64%, 35%);
-  border-radius: inherit;
-  opacity: 0.5;
-}
-
 .preview-img {
   width: 100%;
+  height: 100%;
   position: relative;
-  background-image: url('images/image-header-desktop.jpg');
+  background-image: linear-gradient(
+      hsla(277, 64%, 35%, 0.5),
+      hsla(277, 64%, 35%, 0.5)
+    ),
+    url('images/image-header-desktop.jpg');
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: right;
   border-bottom-right-radius: 11px;
   border-top-right-radius: 11px;
+}
+
+img {
+  object-fit: contain;
 }
 
 .attribution {
@@ -109,4 +108,30 @@ ul {
 }
 .attribution a {
   color: var(--soft-violet);
+}
+
+/* Responsiveness */
+@media (max-width: 375px) {
+  .preview-card {
+    grid-template-columns: 1fr;
+  }
+
+  .preview-img {
+    grid-row: 1;
+    grid-column: 1;
+    background-size: contain;
+  }
+
+  .card-header h1 {
+    font-size: 32px;
+  }
+
+  .card-header .card-desc {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
 }
