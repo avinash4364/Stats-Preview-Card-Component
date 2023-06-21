@@ -23,13 +23,13 @@ Users should be able to:
 
 ### Screenshots
 
-![](/images/Screen%20Shot%202023-06-21%20at%2017.50.26.png)
-![](/images/Screen%20Shot%202023-06-21%20at%2017.41.31.png)
+![](/images/Screen%20Shot%202023-06-21%20at%2017.50.26.jpg)
+![](/images/Screen%20Shot%202023-06-21%20at%2017.41.31.jpg)
 
 ### Links
 
-- Solution URL: [solution](https://your-solution-url.com)
-- Live Site URL: [live site](https://your-live-site-url.com)
+- Solution URL: [solution](https://github.com/avinash4364/Stats-Preview-Card-Component)
+- Live Site URL: [live site](https://avinash4364.github.io/Stats-Preview-Card-Component/)
 
 ## My process
 
